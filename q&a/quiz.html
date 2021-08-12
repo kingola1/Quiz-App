@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question & Answer</title>
+<!-- Static CSS link-->
+    <link rel="stylesheet" href="css/style.css">
+<!--FontAwesome CDN Link for Icons-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/fontawesome.js" integrity="sha512-AfBF4iETeZa9jnGpwNC2NywAQPQR2r+ibHrgT084mHDfqSss8U+/dz6gDKmc/htKWjYlT3uOSLTrhdk+PpiJ4A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    <!-- Start Button-->
+    <div class="start_btn"><button>Start Quiz</button></div>
+
+    <!--  Info Box -->
+    <div class="info_box">
+        <div class="info_title">
+            <span>Rule of the Quiz</span>
+        </div>
+        <div class="info_list">
+            <div class="info">1. You will have only <span>15 seconds</span> for each questions.</div>
+            <div class="info">2. Once you select your answer, you can't reselect.</div>
+            <div class="info">3. You can't select any option once time goes off.</div>
+            <div class="info">4. You can't exit from the quiz while you are playing.</div>
+            <div class="info">5. you will get point on the basis of your correct answers.</div>
+        </div>
+        <div class="buttons">
+            <button class="quit">Exit Quiz</button>
+            <button class="restart">Continue</button>
+        </div>
+    </div>
+
+<!--======================== Question Area ======================== -->
+        <div class="question-box">
+            <header>
+                <div class="title">Question & Answer</div>
+                <div class="timer">
+                    <div class="timer_text">Time Left</div>
+                    <div class="timer_sec">15</div>
+                </div>
+                <div class="time_line"></div>
+            </header>
+            <section>
+                <div class="question">
+                    <!--<span>5 x 5 is equal to _____ </span>-->
+                </div>
+                    <div class="question-option">
+                        <!--<div class="option">
+                            <span>25</span>
+                            <div class="icon tick"><i class="fas fa-check"></i></div>
+                        </div>
+                        <div class="option">
+                            <span>98</span>
+                            <div class="icon cross"><i class="fas fa-cross"></i></div>
+                        </div>
+                        <div class="option">
+                            <span>5</span>
+                        </div>
+                        <div class="option">
+                            <span>55</span>
+                        </div>-->
+                    </div>
+            </section>
+
+            <footer>
+                <div class="total_question">
+                    <!--<span><p>2</p>of<p>5</p>Question</span>-->
+                </div>
+                <div class="div-btn">
+                    <!--<button onclick="" class="prev-ques">Back</button>-->
+                    <button onclick="" class="next-ques">Next</button>
+                </div>
+            </footer>
+        </div>
+
+    <!-- Result Box -->
+    <div class="result_box">
+        <div class="icon">
+            <i class="fas fa-crown"></i>
+        </div>
+        <div class="complete_text">You have completed the Quiz!</div>
+        <div class="score_text">
+            <span>and sorry, you got only <p>4</p> out of <p>5</p></span>
+        </div>
+        <div class="buttons">
+            <button class="restart">Try Again</button>
+            <button class="quit">Quit</button>
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+    <script src="js/questions.js"></script>
+</body>
+</html>
